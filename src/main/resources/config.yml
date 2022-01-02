@@ -1,0 +1,41 @@
+#change the name of chest that spawns
+#variable {PLAYER} will be replaced with the players name
+chest-name: '&a{PLAYER}s Body'
+
+
+#change if and when the chest disappears
+#change the time (in seconds)
+chest-despawn:
+  enabled: true
+  time: 300
+  message: '&cYour loot has despawned'
+
+
+#change the respawn message the player gets
+#variable {LOCATION} will be replaced with the location of the chest
+#variable {TIME} will be replaced with time until it despawns
+respawn-message:
+  - '&a&lYou Have Died!'
+  - '&aDont worry all you stuff is stored at &2{LOCATION}'
+  - '&aThe chest will despawn in &2{TIME} Seconds'
+
+
+#change the type and text of the sign that spawns above the chest
+#variable {PLAYER} will be replaced with the players name
+#put :<number> for the sign line
+sign-type: 'OAK_SIGN'
+sign-line-1: '&a{PLAYER}s'
+sign-line-2: '&2Body'
+sign-line-3: ''
+sign-line-4: ''
+
+#change the reload message:
+reload-message: '&aConfiguration Reloaded'
+
+#change the chest collect message
+#change the item in the inventory for collecting items
+chest-collect-item: 'LIME_DYE'
+chest-collect-item-name: '&aCollect inventory &7(Right-Click)'
+chest-collected-message: '&aYou have collected your chest!'
+
+
