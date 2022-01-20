@@ -33,7 +33,9 @@ public class DeathChestCommand implements CommandExecutor {
             }
 
         }else{
-            sender.sendMessage("§cOnly players may execute this command!");
+            plugin.reloadConfig();
+            this.string = this.plugin.getConfig().getString("reload-message");
+            System.out.println(this.plugin.getName() + " " + string);
         }
 
         return true;
